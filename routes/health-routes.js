@@ -21,6 +21,7 @@ router.post('/health', (req, res, next)=>{
   Health.create({
     question: req.body.question,
     score: req.body.score,
+    taks:[],
     owner: req.user._id
   })
     .then(response => {
