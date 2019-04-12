@@ -94,5 +94,7 @@ app.use('/api', projectRoutes);
 const taskRoutes = require('./routes/task-routes');
 app.use('/api', taskRoutes);
 
+const healthRoutes = require('./routes/health-routes');
+app.use('/api', healthRoutes);
 
 module.exports = app;
